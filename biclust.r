@@ -5,9 +5,9 @@ library(biclust)
 data <- read.csv("../Data/CleanData/BCData.csv", header=TRUE)
 
 #Initialize fields to be dropped from data
-drops <- c("SubId","Q4.2.2.MMI.","Q4.3.MMI.")
+drops <- c("SubId","Q4.2.2.","Q4.3.")
 #Remove ColorBlindness Questions
-drops <- c(drops,"Q6.2.Color.Blindness.Test.","Q6.3.Color.Blindness.Test.","Q6.4.Color.Blindness.Test.","Q6.5.Color.Blindness.Test.","Q6.6.Color.Blindness.Test.","Q6.7.Color.Blindness.Test.","Q6.8.Color.Blindness.Test.")
+drops <- c(drops,"Q6.2.","Q6.3.","Q6.4.","Q6.5.","Q6.6.","Q6.7.","Q6.8.")
 
 rnames <- c()
 cnames <- c()
